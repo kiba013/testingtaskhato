@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+</head>
+<body>
+<form th:method="POST" th:action="@{/api}" th:object="${question}">
+    <label for="text">Введите массив</label><input type="text" th:field="*{text}" id="text">
+</form>
+<div>
+    <p th:text="${text}"/>
+</div>
+</body>
+</html>
